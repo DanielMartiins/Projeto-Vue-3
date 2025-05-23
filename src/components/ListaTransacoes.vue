@@ -70,40 +70,6 @@ onMounted(() => {
 
 
 <style scoped>
-section {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 18px;
-    padding: 0;
-}
-
-h1 {
-    background-color: rgb(55, 62, 85);
-    margin: 0;
-    font-size: 36px;
-    height: 50px;
-    padding: 0;
-}
-
-ul {
-    /* margin-left: auto;
-    margin-right: auto; */
-    height: 240px;
-    overflow: scroll;
-    outline: 1px solid;
-    margin: 0;
-}
-
-span {
-    height: inherit;
-    width: 20%;
-}
-
-li:hover {
-    filter: brightness(1.1);
-}
 
 button {
     margin-left: auto;
@@ -134,8 +100,6 @@ li,
     font-weight: bold;
     text-decoration: underline;
 }
-
-
 
 .seta-troca-transacao button {
     width: 20px;

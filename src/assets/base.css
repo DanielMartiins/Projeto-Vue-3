@@ -9,16 +9,6 @@
   /* border: 1px solid; */
 }
 
-
-section {
-  border: 1px solid rgb(239, 239, 239);
-}
-
-body{
-  background-color: #181a1b;
-  color: rgb(239, 239, 239);
-}
-
 main {
   width: 720px;
   margin-left: auto;
@@ -28,11 +18,35 @@ main {
   flex-direction: column;
 }
 
+body {
+  background-color: #181a1b;
+  color: rgb(239, 239, 239);
+}
+
+h1 {
+  background-color: rgb(55, 62, 85);
+  margin: 0;
+  font-size: 36px;
+  height: 50px;
+  padding: 0;
+}
+
 header {
   font-size: 36px;
   font-weight: bolder;
   text-align: center;
 }
+
+section {
+  border: 1px solid rgb(239, 239, 239);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+}
+
 
 h1 {
   font-size: 26px;
@@ -40,11 +54,25 @@ h1 {
 }
 
 span {
-  width: 150px;
   font-size: 14px;
+  height: inherit;
+  width: 20%;
 }
 
 button {
   height: 30px;
   border-radius: 3px;
+}
+
+ul {
+  /* margin-left: auto;
+    margin-right: auto; */
+  height: 240px;
+  overflow: scroll;
+  outline: 1px solid;
+  margin: 0;
+}
+
+li:hover {
+  filter: brightness(1.1);
 }
