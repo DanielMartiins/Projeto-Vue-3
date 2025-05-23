@@ -25,7 +25,7 @@ function definirOperacao(valorTransacao) {
 
 function resetarFormulario() {
     novaTransacao.value.descricao = "";
-    novaTransacao.value.valor = "";
+    novaTransacao.value.valor = NaN;
     novaTransacao.value.ehValido = true;
 }
 
