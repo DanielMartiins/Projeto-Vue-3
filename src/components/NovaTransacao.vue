@@ -11,11 +11,10 @@ const props = defineProps({
     }
 })
 const novaTransacao = ref({
-    descricao: String,
-    valor: Number,
-    ehValido: Boolean,
+    descricao: "",
+    valor: NaN,
+    ehValido: true,
 })
-resetarFormulario();
 
 
 
@@ -46,6 +45,9 @@ function adicionarTransacao() {
         resetarFormulario();
     }
 }
+
+
+resetarFormulario();
 </script>
 
 <template>
