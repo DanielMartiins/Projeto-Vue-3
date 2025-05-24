@@ -100,9 +100,6 @@ resetarFormulario()
   h1 {
     border-bottom: 1px solid white;
     width: 100%;
-    margin: 0px;
-    align-self: flex-start;
-
   }
 
   div {
