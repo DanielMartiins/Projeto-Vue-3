@@ -21,9 +21,7 @@ const transacoes = ref([
 </script>
 
 <template>
-    <header>
-        <h1> Controle de Despesas e Receitas </h1>
-    </header>
+
 
     <main>
         <ListaTransacoes v-bind:transacoes='transacoes'></ListaTransacoes>
