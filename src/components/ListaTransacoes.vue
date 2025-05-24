@@ -51,16 +51,16 @@ onMounted(() => {
             </div>
         </div>
         <ul ref="listaTransacoes" style="list-style-type: none">
-            <li v-for="(t, index) in transacoes">
+            <li v-for="(t, index) in transacoes" :key="index">
                 <span v-text="t.descricao"></span>
                 <span v-bind:class="t.valor >= 0 ? 'credito' : 'debito'"
                     v-text="t.operacao + 'R$ ' + Math.abs(t.valor).toFixed(2)"></span>
                 <span v-bind:class="saldoAposTransacao[index] >= 0 ? 'saldo-positivo' : 'saldo-negativo'"
                     v-text="'R$ ' + saldoAposTransacao[index].toFixed(2)"></span>
                 <span class="seta-troca-transacao">
-                    <button @click="trocarTransacoes(index, index - 1)" :disabled="index == 0">&#8593</button>
+                    <button @click="trocarTransacoes(index, index - 1)" :disabled="index == 0">&#8593;</button>
                     <button @click="trocarTransacoes(index, index + 1)"
-                        :disabled="index === transacoes.length - 1">&#8595</button>
+                        :disabled="index === transacoes.length - 1">&#8595;</button>
                 </span>
                 <button @click="removerTransacao(index)">Remover</button>
             </li>
@@ -88,6 +88,7 @@ li,
 #legenda-transacao {
     outline: 1px solid;
     margin: 0px;
+
 }
 
 #legenda-transacao div {
