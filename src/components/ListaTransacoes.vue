@@ -106,7 +106,6 @@ li,
   }
 }
 
-
 .seta-troca-transacao button {
   width: 20px;
   font-size: 20px;
@@ -119,10 +118,6 @@ li,
 .debito {
   color: rgb(255, 115, 115);
   ;
-}
-
-.saldo-negativo {
-  background-color: darkred;
 }
 
 .saldo-negativo {

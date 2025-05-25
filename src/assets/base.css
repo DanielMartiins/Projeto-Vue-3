@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border-radius: 0px;
+  border-radius: 0;
   margin: 5px;
   padding: 1px;
   font-family: arial, serif;
@@ -29,6 +29,7 @@ h1 {
   font-size: 36px;
   height: 50px;
   padding: 0;
+  text-align: center;
 }
 
 header {
@@ -46,11 +47,6 @@ section {
   padding: 0;
 }
 
-
-h1 {
-  font-size: 26px;
-  text-align: center;
-}
 
 span {
   font-size: 14px;
