@@ -2,12 +2,8 @@
 import { CREDITO, DEBITO } from '../utils/variaveis-globais'
 import { ref } from 'vue'
 
-const props = defineProps({
-  transacoes: {
-    type: Array,
-    required: true,
-  },
-})
+const emit = defineEmits(['adicionarTransacao']);
+
 const novaTransacao = ref({
   descricao: '',
   valor: NaN,
@@ -37,12 +33,13 @@ function adicionarTransacao() {
       valor: valorTransacao,
       operacao: definirOperacao(valorTransacao),
     }
-    props.transacoes.push(transacao)
-    resetarFormulario()
+
+    emit('adicionarTransacao', transacao);
+    resetarFormulario();
   }
 }
 
-resetarFormulario()
+resetarFormulario();
 </script>
 
 <template>

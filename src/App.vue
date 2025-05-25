@@ -17,7 +17,9 @@ const transacoes = ref([
     { descricao: "Produto X", valor: -15000.99, operacao: DEBITO },
 ]);
 
-
+function adicionarTransacao(novaTransacao) {
+  transacoes.value.push(novaTransacao);
+}
 </script>
 
 <template>
@@ -25,7 +27,7 @@ const transacoes = ref([
 
     <main>
         <ListaTransacoes v-bind:transacoes='transacoes'></ListaTransacoes>
-        <NovaTransacao v-bind:transacoes='transacoes'></NovaTransacao>
+        <NovaTransacao @adicionar-transacao='adicionarTransacao' v-bind:transacoes='transacoes'></NovaTransacao>
     </main>
 </template>
 
