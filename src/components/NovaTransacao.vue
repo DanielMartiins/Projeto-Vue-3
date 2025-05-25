@@ -144,9 +144,4 @@ resetarFormulario()
     }
   }
 }
-
-/* #nova-transacao input,
-#nova-transacao button, #nova-transacao input {
-    width: 300px;
-} */
 </style>
