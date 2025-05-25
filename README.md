@@ -1,40 +1,30 @@
-# projeto-vue-3
+# Controle de Despesas - Projeto com Vue 3 (Composition API)
+  Primeiro trabalho da disciplina de Desenvolvimento de Servidor Web com foco no aprendizado prático de Vue.js(versão 2 ou 3).
+  A aplicação é um sistema simples de controle de despesas e receitas em uma conta corrente, totalmente
+  implementado no front-end e estruturado com Node.js como ambiente de desenvolvimento.
+### [Enunciado do Trabalho](./EnunciadoTrabalho.pdf)
+## Funcionalidades Implementadas:
+1. ✅ Apresentar uma lista de transações 
+2. ✅ Registrar uma nova transação via formulário
+3. ✅ Remover uma transação
+4. ✅ Trocar a ordem das transações, subindo ou descendo uma transação na lista e atualizando os saldos.
+5. ✅ Apresente os créditos em verde e os débitos em vermelho na lista de transações. 
+6. ✅ Apresente saldos negativos com cor de fundo vermelha e cor de texto amarela.
+7. ✅ Mostrar o saldo atual após cada transação
+   
+## Como rodar localmente
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+### Instalar dependências
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Rodar a aplicação em localhost
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
