@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { computed } from 'vue'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 
 const listaTransacoes = ref(null)
 
@@ -9,35 +9,26 @@ const props = defineProps({
   transacoes: {
     type: Array,
     required: true,
-  }
-});
+  },
+})
 
-function removerTransacao(index) {
-  props.transacoes.splice(index, 1);
-}
-
-function trocarTransacoes(index_t1, index_t2) {
-  let temp = props.transacoes[index_t1];
-  props.transacoes[index_t1] = props.transacoes[index_t2];
-  props.transacoes[index_t2] = temp;
-}
+const emit = defineEmits(['removerTransacao', 'trocarTransacoes'])
 
 function scrollarListaParaBaixo() {
-  listaTransacoes.value.scrollTop = listaTransacoes.value.scrollHeight;
+  listaTransacoes.value.scrollTop = listaTransacoes.value.scrollHeight
 }
 
 const saldoAposTransacao = computed(() => {
-  let saldo = 0.0;
-  let saldoAcumulado = [];
+  let saldo = 0.0
+  let saldoAcumulado = []
   for (let i = 0; i < props.transacoes.length; i++)
-    saldoAcumulado.push(saldo += props.transacoes[i].valor)
-  return saldoAcumulado;
+    saldoAcumulado.push((saldo += props.transacoes[i].valor))
+  return saldoAcumulado
 })
 
 onMounted(() => {
-  scrollarListaParaBaixo();
+  scrollarListaParaBaixo()
 })
-
 </script>
 
 <template>
@@ -53,29 +44,34 @@ onMounted(() => {
     <ul ref="listaTransacoes" style="list-style-type: none">
       <li v-for="(t, index) in transacoes" :key="index">
         <span v-text="t.descricao"></span>
-        <span v-bind:class="t.valor >= 0 ? 'credito' : 'debito'"
-          v-text="t.operacao + 'R$ ' + Math.abs(t.valor).toFixed(2)">
+        <span
+          v-bind:class="t.valor >= 0 ? 'credito' : 'debito'"
+          v-text="t.operacao + 'R$ ' + Math.abs(t.valor).toFixed(2)"
+        >
         </span>
-        <span v-bind:class="saldoAposTransacao[index] >= 0 ? 'saldo-positivo' : 'saldo-negativo'"
-          v-text="'R$ ' + saldoAposTransacao[index].toFixed(2)">
+        <span
+          v-bind:class="saldoAposTransacao[index] >= 0 ? 'saldo-positivo' : 'saldo-negativo'"
+          v-text="'R$ ' + saldoAposTransacao[index].toFixed(2)"
+        >
         </span>
         <span class="seta-troca-transacao">
-          <button @click="trocarTransacoes(index, index - 1)" :disabled="index == 0">
+          <button @click="emit('trocarTransacoes', index, index-1)" :disabled="index == 0">
             &#8593;
           </button>
-          <button @click="trocarTransacoes(index, index + 1)" :disabled="index === transacoes.length - 1">
+          <button
+            @click="emit('trocarTransacoes', index, index+1)"
+            :disabled="index === transacoes.length - 1"
+          >
             &#8595;
           </button>
         </span>
-        <button @click="removerTransacao(index)">Remover</button>
+        <button @click="emit('removerTransacao', index)">Remover</button>
       </li>
     </ul>
   </section>
 </template>
 
-
 <style scoped lang="scss">
-
 button {
   margin-left: auto;
 }
@@ -117,7 +113,6 @@ li,
 
 .debito {
   color: rgb(255, 115, 115);
-  ;
 }
 
 .saldo-negativo {
