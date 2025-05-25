@@ -24,8 +24,3 @@ npm install
 ```sh
 npm run dev
 ```
-
-
-```sh
-npm run lint
-```
