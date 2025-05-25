@@ -1,14 +1,17 @@
 # Controle de Despesas - Projeto com Vue 3 (Composition API)
   Primeiro trabalho da disciplina de **Desenvolvimento de Servidor Web**, no curso de **Bacharelado em Sistemas de Informação na UNIRIO**, com foco no aprendizado prático de **Vue.js**.
-  <br/>A aplicação é um sistema simples de **controle de despesas e receitas** em uma conta corrente, **totalmente
+  
+  A aplicação é um sistema simples de **controle de despesas e receitas** em uma conta corrente, **totalmente
   implementado no front-end**, usando **Node.js** como ambiente de desenvolvimento.
 ### 📄[Enunciado do Trabalho](./EnunciadoTrabalho.pdf)
 
 ---
-## 🚀Tecnologias utilizadas
-  [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,vue,scss)](https://skillicons.dev) 
+
+## Tecnologias utilizadas
+  ![Tecnologias](https://skillicons.dev/icons?i=html,css,js,nodejs,vue,scss,vscode)
 
 ---
+
 ## ✅Funcionalidades Implementadas
 1. Apresentar uma lista de transações 
 2. Registrar uma nova transação via formulário
@@ -19,17 +22,32 @@
 7. Mostrar o saldo atual após cada transação
 
 ---
+
 ## 🧪 Como rodar localmente
 
-### Instalar dependências
+### 1. Clonar projeto
+```
+git clone https://github.com/DanielMartiins/projeto-vue-3
+```
+
+### 2. Entrar na pasta do projeto
+```
+cd .\projeto-vue-3\
+```
+
+### 3. Instalar dependências
 ```sh
 #Dentro da pasta do projeto
 npm install
 ```
 
-### Rodar a aplicação em localhost
-
+### 4. Rodar a aplicação
 ```sh
 #Dentro da pasta do projeto
 npm run dev
+```
+
+### 5. Acessar pelo navegador em:
+```sh
+http://localhost:5173
 ```
