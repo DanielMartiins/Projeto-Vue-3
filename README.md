@@ -24,26 +24,23 @@
 ---
 
 ## 🧪 Como rodar localmente
-
-### 1. Clonar projeto
+### 1. Clonar projeto:
 ```
 git clone https://github.com/DanielMartiins/projeto-vue-3
 ```
 
-### 2. Entrar na pasta do projeto
+### 2. Entrar na pasta do projeto:
 ```
 cd .\projeto-vue-3\
 ```
 
-### 3. Instalar dependências
+### 3. Instalar dependências:
 ```sh
-#Dentro da pasta do projeto
 npm install
 ```
 
-### 4. Rodar a aplicação
+### 4. Rodar a aplicação:
 ```sh
-#Dentro da pasta do projeto
 npm run dev
 ```
 
