@@ -1,5 +1,5 @@
 # Controle de Despesas - Projeto com Vue 3 (Composition API)
-  Primeiro trabalho da disciplina de Desenvolvimento de Servidor Web com foco no aprendizado prático de Vue.js(versão 2 ou 3).
+  Primeiro trabalho da disciplina de Desenvolvimento de Servidor Web, no curso de Bacharelado em Sistemas de Informação na UNIRIO, com foco no aprendizado prático de Vue.js(versão 2 ou 3).
   A aplicação é um sistema simples de controle de despesas e receitas em uma conta corrente, totalmente
   implementado no front-end e estruturado com Node.js como ambiente de desenvolvimento.
 ### [Enunciado do Trabalho](./EnunciadoTrabalho.pdf)
