@@ -16,11 +16,13 @@
 
 ### Instalar dependências
 ```sh
+#Dentro da pasta do projeto
 npm install
 ```
 
 ### Rodar a aplicação em localhost
 
 ```sh
+#Dentro da pasta do projeto
 npm run dev
 ```
