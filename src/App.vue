@@ -2,9 +2,7 @@
 import { ref } from 'vue';
 import ListaTransacoes from './components/ListaTransacoes.vue';
 import NovaTransacao from './components/NovaTransacao.vue';
-
-const CREDITO = "Crédito: +";
-const DEBITO = "Débito: -";
+import { CREDITO, DEBITO } from './utils/variaveis-globais';
 
 const transacoes = ref([
     { descricao: "Venda", valor: +6072.0, operacao: CREDITO },
