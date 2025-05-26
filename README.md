@@ -5,12 +5,12 @@
   implementado no front-end**, usando **Node.js** como ambiente de desenvolvimento.
 ### 📄[Enunciado do Trabalho](./EnunciadoTrabalho.pdf)
 
----
+
 
 ## Tecnologias utilizadas
   ![Tecnologias](https://skillicons.dev/icons?i=html,css,js,nodejs,vue,scss,vscode)
 
----
+
 
 ## ✅Funcionalidades Implementadas
 1. Apresentar uma lista de transações 
@@ -21,7 +21,7 @@
 6. Destacar saldos negativos com **fundo vermelho** e **texto amarelo**.
 7. Mostrar o saldo atual após cada transação
 
----
+
 
 ## 🧪 Como rodar localmente
 ### 1. Clonar projeto:
