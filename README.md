@@ -7,12 +7,12 @@
 
 
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
   ![Tecnologias](https://skillicons.dev/icons?i=html,css,js,nodejs,vue,scss,vscode)
 
 
 
-## ✅ Funcionalidades Implementadas
+## Funcionalidades Implementadas
 1. Apresentar uma lista de transações 
 2. Registrar uma nova transação via formulário
 3. Remover uma transação
@@ -23,7 +23,7 @@
 
 
 
-## 🧪 Como rodar localmente
+## Como rodar localmente
 ### 1. Clonar projeto:
 ```
 git clone https://github.com/DanielMartiins/projeto-vue-3
